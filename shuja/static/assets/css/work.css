@@ -1,0 +1,14 @@
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.justify-content-center {
+  justify-content: center !important;
+}
+.justify-content-left {
+  justify-content: left !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
