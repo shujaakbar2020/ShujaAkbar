@@ -34,7 +34,7 @@ SECRET_KEY = 'r%smx!zmsw5zx@-josm9ov#ook%_cs&g10woff+&l%@i^8(*vj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'shujaakbar.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'shujaakbar.herokuapp.com']
 
 
 # Application definition
@@ -86,8 +86,12 @@ WSGI_APPLICATION = 'shujaakbar.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'shujadb',
+        'USER': 'myshuja',
+        'PASSWORD': '2121',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 

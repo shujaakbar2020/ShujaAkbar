@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.contrib import messages
 from django.core.mail import send_mail
+from django.conf import settings
 
 
 # Create your views here.
@@ -17,7 +18,6 @@ def index(request):
             messages.warning(request, 'Please Enter your Message')
         else:
             # Contact.objects.create(name=full_name, email=email, message=message)
-            send_mail(full_name, message, email, ['shujaakbar2020@gmail.com', 'saranargis2020@gmail.com'])
+            # send_mail(full_name, message, settings.EMAIL_HOST_USER, [email])
             messages.success(request, 'Thanks for reaching me, I have received your Message.')
-
     return render(request, 'shuja/index.html')
