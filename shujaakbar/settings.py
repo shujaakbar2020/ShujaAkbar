@@ -87,11 +87,11 @@ WSGI_APPLICATION = 'shujaakbar.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'shujadb',
-        'USER': 'myshuja',
-        'PASSWORD': '2121',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': 'd56fb4638oclrr',
+        'USER': 'zekmchtozxvvux',
+        'PASSWORD': 'aeca106f58f0524d44338a43da1478ac151f6d30a3d494df9328b24cc9244200',
+        'HOST': 'ec2-52-45-179-101.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
