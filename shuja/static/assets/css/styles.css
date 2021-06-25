@@ -291,11 +291,23 @@ img{
 .skills__html{
   width: 95%;
 }
-.skills__css{
+.skills__python{
   width: 85%;
 }
+.skills__django{
+  width: 85%;
+}
+.skills__react{
+  width: 75%;
+}
+.skills__psql{
+  width: 85%;
+}
+.skills__css{
+  width: 95%;
+}
 .skills__js{
-  width: 65%;
+  width: 75%;
 }
 .skills__ux{
   width: 85%;
